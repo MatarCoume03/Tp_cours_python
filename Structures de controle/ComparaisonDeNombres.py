@@ -8,9 +8,9 @@ number2 = input("entrer le second nombre: ")
 number2 = float(number2)
 
 #comparaison des nombres
-if number1 > number2:
+if number1 > number2 or number2 < number1:
     print(number1)
-elif number2 > number1:
+elif number2 > number1 or number1 < number2:
     print(number2)
 else:
     print("egaux")
