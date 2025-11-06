@@ -10,15 +10,18 @@ def calculatrice():
 
     match signe:
         case "+":
-            print("Vous avez choisi l'addition et voici le resultat:\n", nb1, "+ ", nb2, " = ", nb1 + nb2)
+            print(f"Vous avez choisi l'addition et voici le resultat:\n {nb1} +  {nb2}  =  {nb1 + nb2}")
         case "-":
-            print("Vous avez choisi la soustraction et voici le resultat:\n ", nb1, " - ", nb2, " = ", nb1 - nb2)
+            print(f"Vous avez choisi la soustraction et voici le resultat:\n {nb1} - {nb2} = {nb1 - nb2}")
         case "*":
-            print("Vous avez choisi la multiplication et voici le resulat:\n ", nb1, " x ", nb2, " = ", nb1 * nb2)
+            print(f"Vous avez choisi la multiplication et voici le resulat:\n {nb1} x {nb2} = {nb1 * nb2}")
         case "/":
-            print("Vous avez choisi la division et voici le resultat:\n ", nb1, " / ", nb2, " = ", nb1 / nb2)
+            if nb2 == 0:
+                print("Le denominateur doit etre different de zero")
+            else:
+                print(f"Vous avez choisi la division et voici le resultat:\n  {nb1} / {nb2} = {nb1 / nb2}")
         case "%":
-            print("Vous avez choisi le modulo et voici le resultat:\n ", nb1, " %", nb2, " = ", nb1 % nb2)
+            print(f"Vous avez choisi le modulo et voici le resultat:\n {nb1} % {nb2} = {nb1 % nb2}")
         case __:
             print("Choix non disponible")
     
