@@ -10,10 +10,19 @@ def ZCasino():
     print("******************************************************************\n")
 
     #jeu de la roulette
-    print("1) Saisi du nombre")
-    nb = int(input("Nombre: "))
-    print("1) Saisi de la somme misee")
-    sm = int(input("Somme: "))
+    try:
+        print("1) Saisi du nombre")
+        nb = int(input("Nombre: "))
+        assert 0 <= nb <= 49
+    except AssertionError:
+        print("Le nombre saisi doit etre compris entre 0 et 49")
+    
+    try:
+        print("1) Saisi de la somme misee")
+        sm = int(input("Somme: "))
+        assert sm > 0
+    except AssertionError:
+        print("LA Somme saisie doit etre strictement positif")
 
     #resume des choix du client
     print(f"\nNombre Choisi: {nb}")
