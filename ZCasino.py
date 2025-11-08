@@ -9,6 +9,8 @@ def ZCasino():
     print("==================================================================")
     print("******************************************************************\n")
 
+    argent = 2000
+
     #jeu de la roulette
     while True:
         print("1) Saisi du nombre")
@@ -22,9 +24,9 @@ def ZCasino():
         print("2) Saisi de la somme misee")
         try:
             sm = int(input("Somme: "))
-            assert sm > 0
+            assert argent > sm
         except AssertionError:
-            print("LA Somme saisie doit etre strictement positif")
+            print("Desole la somme que vous chercher a misee est superieur a l'argent qui vous reste :(")
             continue
 
         #resume des choix du client
@@ -36,13 +38,17 @@ def ZCasino():
         print(f"Nombre sorti par la roulette: {hasar}")
         if nb == hasar:
             print("Felicitation vous etes l'heureux gagnant et vous remportez 3X la somme misee :)")
-            print(f"Somme gagnee = {3*sm}")
+            print(f"Somme gagnee = {sm * 3}")
+            argent += sm * 3
         else:
             if (nb % 2 == hasar % 2 == 0) or (nb % 2 != 0 and hasar % 2 != 0):
                 print("Ca va vous remporter la moitie de la somme misee comme recompense :|")
-                print(f"Somme gagnee: {math.ceil(sm + (sm / 2))}")
+                sm = math.ceil(sm / 2)
+                print(f"Somme gagnee: {sm}")
+                argent += sm
             else:
                 print("Desole une prochaine fois peut etre :(")
+                argent -= sm
 
         continuer = input("Voulez vous faire une autre partie?")
         if continuer.lower() != 'o':
