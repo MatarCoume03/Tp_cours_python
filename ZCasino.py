@@ -44,6 +44,9 @@ def ZCasino():
             else:
                 print("Desole une prochaine fois peut etre :(")
 
+        continuer = input("Voulez vous faire une autre partie?")
+        if continuer.lower() != 'o':
+            break
 
 if __name__ == "__main__":
     ZCasino()
