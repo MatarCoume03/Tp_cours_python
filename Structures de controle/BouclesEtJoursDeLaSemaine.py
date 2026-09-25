@@ -9,8 +9,8 @@ semaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanch
 for jour in semaine:
     print(f"{jour}")
 print(f"{'X':X>10s}")
-#Écrivez une série d’instructions affichant les jours de la semaine en utilisant une boucle for
+#Écrivez une série d’instructions affichant les jours du Week-end en utilisant une boucle while
 i = 5
-while i in range(5,7):
+while i < len(semaine):
     print(f"{semaine[i]}")
     i += 1
