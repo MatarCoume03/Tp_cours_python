@@ -7,3 +7,6 @@ Soit la liste ["vache", "souris", "levure", "bacterie"]. Affichez l’ensemble d
 liste = ["Vache", "Souris", "Levure", "Bacterie"]
 for element in liste:
     print(element)
+print(f"{'-':->10s}")
+for i in range(0,4):
+    print(f"{liste[i]}")
