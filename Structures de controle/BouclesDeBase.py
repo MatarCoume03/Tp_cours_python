@@ -10,3 +10,8 @@ for element in liste:
 print(f"{'-':->10s}")
 for i in range(0,4):
     print(f"{liste[i]}")
+print(f"{'-':->10s}")
+i = 0
+while i in range(0,4):
+    print(f"{liste[i]}")
+    i += 1
