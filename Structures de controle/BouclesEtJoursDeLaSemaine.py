@@ -8,3 +8,9 @@ semaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanch
 #Écrivez une série d’instructions affichant les jours de la semaine en utilisant une boucle for
 for jour in semaine:
     print(f"{jour}")
+print(f"{'X':X>10s}")
+#Écrivez une série d’instructions affichant les jours de la semaine en utilisant une boucle for
+i = 5
+while i in range(5,7):
+    print(f"{semaine[i]}")
+    i += 1
