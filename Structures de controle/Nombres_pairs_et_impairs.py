@@ -5,6 +5,8 @@ partir de la liste impairs, construit une liste pairs dans laquelle tous les él
 """
 impairs = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
 pairs = []
-for i in range(0,11):
+i = 0
+while i < len(impairs):
     pairs.append(impairs[i] + 1)
+    i += 1
 print(pairs)
