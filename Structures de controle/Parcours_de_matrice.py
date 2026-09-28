@@ -16,14 +16,19 @@ matrice de dimensions 3 × 3, puis 5 × 5, et enfin 10 × 10.
 Créez une seconde version de votre script, cette fois-ci avec deux boucles while.
 """
 matriceCarree = [
-    [1, 2, 3, 4, 5],
-    [1, 2, 3, 4, 4],
-    [1, 2, 3, 4, 5],
-    [1, 2, 3, 4, 5],
-    [1, 2, 3, 4, 5]
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
 ]
 print("Ligne    Colonne")
 for ligne, colonne in enumerate(matriceCarree):
-    for i in range(0, 5):
+    for i in range(0, 10):
         print(f"  {ligne + 1}          {colonne[i]}")
         i += 1
