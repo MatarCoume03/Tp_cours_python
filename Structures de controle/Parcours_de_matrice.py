@@ -19,7 +19,6 @@ matriceCarree = [
     [1, 2],
     [1, 2]
 ]
-i = 0
 print("Ligne    Colonne")
 for ligne, colonne in enumerate(matriceCarree):
     for i in range(0, 2):
