@@ -29,6 +29,6 @@ matriceCarree = [
 ]
 print("Ligne    Colonne")
 for ligne, colonne in enumerate(matriceCarree):
-    for i in range(0, 10):
+    for i in range(0, len(matriceCarree)):
         print(f"  {ligne + 1}          {colonne[i]}")
         i += 1
