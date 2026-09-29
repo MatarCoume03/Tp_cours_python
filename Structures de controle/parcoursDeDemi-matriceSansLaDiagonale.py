@@ -27,3 +27,4 @@ while ligne < len(matriceCarree):
         print(f"  {ligne + 1}         {matriceCarree[ligne][colonne]}")
         colonne += 1
     ligne += 1
+print(f"Pour une marice 10X10, on a parcouru {ligne*colonne/2} cases")
