@@ -11,8 +11,10 @@ mais simplement la valeur de N et le nombre de cases parcourues. Affichez cela p
 Pouvez-vous trouver une formule générale reliant le nombre de cases parcourues à N ?
 """
 matriceCarree = [
-    [1, 2],
-    [1, 2],    
+    [1, 2, 3, 4],
+    [1, 2, 3, 4],   
+    [1, 2, 3, 4],
+    [1, 2, 3, 4] 
 ]
 #print("Ligne    Colonne")
 ligne = 0
@@ -21,5 +23,5 @@ while ligne < len(matriceCarree):
     while colonne < len(matriceCarree[ligne]) and colonne != ligne:
         #print(f"  {ligne + 1}         {matriceCarree[ligne][colonne]}")
         colonne += 1
-        print(f"Pour une marice {len(matriceCarree)}X{len(matriceCarree[ligne])}, on a parcouru {int(ligne*colonne/2)} cases")
     ligne += 1
+print(f"Pour une marice {len(matriceCarree)}X{len(matriceCarree)}, on a parcouru {int(ligne*colonne/2)} cases")
