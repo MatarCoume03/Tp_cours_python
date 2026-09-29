@@ -35,3 +35,4 @@ while ligne < len(matriceCarree):
         print(f"  {ligne + 1}         {matriceCarree[ligne][colonne]}")
         colonne += 1
     ligne += 1
+    
