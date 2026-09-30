@@ -6,7 +6,7 @@ de caractères. Sans utiliser cette fonction, créez un script qui détermine le
 liste = [8, 4, 6, 1, 5]
 i = 0
 minimum = 0
-for i in range(0, 4):
+for i in range(len(liste) - 1):
     if liste[i] <= liste[i + 1]:
         minimum = liste[i]
     else:
