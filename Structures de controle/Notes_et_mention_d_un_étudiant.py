@@ -9,4 +9,11 @@ de 14.
 notes = [14, 9, 13, 15, 12]
 print(f"La plus petite note de l'etudiant est de: {min(notes)}")
 print(f"La plus grande note de l'etudiant est de: {max(notes)}")
-print(f"L'etudiant a obtenu une moyenne de: {(sum(notes)/len(notes)):.2f}")
+moyenne = sum(notes)/len(notes)
+print(f"L'etudiant a obtenu une moyenne de: {moyenne:.2f}")
+if 10 <= moyenne < 12:
+    print("L'etudiant a obtenu la mention passable")
+elif 12 <= moyenne < 14:
+    print("L'etudiant a obtenu la mention assez bien")
+elif moyenne >= 14:
+    print("L'etudiant a obtenu la mention bien")
