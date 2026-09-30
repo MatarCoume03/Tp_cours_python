@@ -18,14 +18,14 @@ syracuse = [n,]
 while n > 1:
     if (n % 2) == 0:
         n /= 2
-        syracuse.append(n)
+        syracuse.append(int(n))
         if (n % 2) != 0:
             n = n * 3 + 1
-            syracuse.append(n)
+            syracuse.append(int(n))
         elif (n % 2) == 0:
             n /= 2
-            syracuse.append(n)
+            syracuse.append(int(n))
     elif (n % 2) != 0:
         n = n * 3 + 1
-        syracuse.append(n)
+        syracuse.append(int(n))
 print(f"Voici la suite de syracuse avec comme point de depart l'entier positif n fourni: \n{syracuse}")
