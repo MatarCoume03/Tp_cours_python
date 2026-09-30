@@ -17,7 +17,7 @@ semaine =[
     'Dimanche'
     ]
 for jour in semaine:
-    print(jour)
+    print(f"{jour}:")
     if jour == 'Lundi' or jour == 'Mardi' or jour == 'Mercredi' or jour == 'Jeudi':
         print("Au travail")
     elif jour == 'Vendredi':
