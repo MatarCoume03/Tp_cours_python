@@ -29,3 +29,4 @@ while n > 1:
         n = n * 3 + 1
         syracuse.append(int(n))
 print(f"Voici la suite de syracuse avec comme point de depart l'entier positif n fourni: \n{syracuse}")
+print("nombres qui constituent le cycle trivial sont {{4, 2, 1}} car ils reviennent dans toutes les suites de Syracuse")
