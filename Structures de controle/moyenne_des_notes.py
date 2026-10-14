@@ -9,5 +9,5 @@ Terminez le script en calculant et affichant la moyenne des notes avec deux déc
 """
 notes = open("notes.txt", "r")
 for note in notes:
-    print(note)
-    #notes.readlines()
+    note = float(note)
+    print(f"{note:.2f}")
