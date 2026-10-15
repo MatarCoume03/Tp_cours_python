@@ -8,16 +8,11 @@ liste.
 Terminez le script en calculant et affichant la moyenne des notes avec deux décimales.
 """
 notes = open("notes.txt", "r")
+listeNotes = []
 for note in notes:
     note = note.replace(',', '.')
     note = float(note)
     print(f"{note:.2f}")
-notes.close()
-notes = open("notes.txt", "r")
-listeNotes = []
-for note in notes:
-    note = note.replace(',', '.')
-    note = note.replace('\n', '')
-    listeNotes.append(float(note))
+    listeNotes.append(note)
 print(listeNotes)
 notes.close()
