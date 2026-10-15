@@ -19,6 +19,6 @@ with open("notes.txt", "r") as fichier1, open("notes2.txt", "w") as fichier2:
     print(listeNotes)
     for note in listeNotes:
         if note < 10:
-            fichier2.write(str(note) + " recalé")
+            fichier2.write(str(note) + " recale\n")
         else:
-            fichier2.write(str(note) + " admis")
+            fichier2.write(str(note) + " admis\n")
