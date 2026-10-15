@@ -15,4 +15,5 @@ for note in notes:
     print(f"{note:.2f}")
     listeNotes.append(note)
 print(listeNotes)
+print(f"La moyenne des notes est de: {sum(listeNotes)/len(listeNotes):.2f}")
 notes.close()
