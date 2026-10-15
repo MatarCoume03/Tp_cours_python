@@ -17,3 +17,8 @@ with open("notes.txt", "r") as fichier1, open("notes2.txt", "w") as fichier2:
         note = note.replace("\n", "")
         listeNotes.append(float(note))
     print(listeNotes)
+    for note in listeNotes:
+        if note < 10:
+            fichier2.write(str(note) + " recalé")
+        else:
+            fichier2.write(str(note) + " admis")
