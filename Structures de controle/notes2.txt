@@ -4,7 +4,7 @@
 14.0 admis
 19.0 admis
 11.0 admis
-9.0 recalé
+9.0 recale
 16.0 admis
 20.0 admis
 16.5 admis
@@ -12,5 +12,5 @@
 15.0 admis
 19.5 admis
 20.0 admis
-5.0 recalé
-9.5 recalé
+5.0 recale
+9.5 recale
