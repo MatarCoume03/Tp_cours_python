@@ -1,6 +1,5 @@
 import math
-xa = 0
-ya = 0
+xa ,ya = 0, 0
 θ = 0
 r = 0.5
 while  θ <= 4*(math.pi):
