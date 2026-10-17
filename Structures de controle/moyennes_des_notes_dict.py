@@ -14,5 +14,5 @@ dico_notes = {
     "biologie": 10,
     "sport": 19
 }
-listeNotes = list(dico_notes.values())
-print(f"L'eleve a une moyenne de: {sum(listeNotes)/len(dico_notes)}")
+#listeNotes = list(dico_notes.values())
+print(f"L'eleve a une moyenne de: {sum(dico_notes.values())/len(dico_notes)}")
