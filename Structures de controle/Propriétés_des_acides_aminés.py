@@ -28,3 +28,8 @@ for base in sequence:
 print("\n")
 for base in sequence:
     print(aa2prop.get(base), end= " ")
+hélice_trans = []
+for base in sequence:
+    if aa2prop.get(base) == 'a':
+        hélice_trans.append(base)
+print(f"\n\nl'hélice transmembranaire est la suivante: {str(hélice_trans)}")
