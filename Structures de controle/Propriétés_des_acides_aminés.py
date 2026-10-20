@@ -24,4 +24,7 @@ aa2prop = {
 }
 sequence = "SNADVVYEKQMLYLYVLSGIG"
 for base in sequence:
-    print(base, end= "  ")
+    print(f"{base}", end= " ")
+print("\n")
+for base in sequence:
+    print(aa2prop.get(base), end= " ")
