@@ -4,3 +4,5 @@ Déterminez également le nombre total de fichiers et de répertoires présents 
 """
 from pathlib import Path
 print(Path().cwd())
+for nom in Path().iterdir():
+    print(nom)
