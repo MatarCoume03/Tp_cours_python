@@ -4,9 +4,8 @@ fonction choice() ou choices().
 """
 import random
 bases = ["A", "T", "C", "G"]
+liste = random.choices(bases, k=20)
 sequence = ""
-i = 0
-while i < len(bases * 5):
-    sequence += random.choice(bases)
-    i += 1
+for base in liste:
+    sequence += base
 print(f"Voici la sequence d'ADN de 20 bases: {sequence}")
