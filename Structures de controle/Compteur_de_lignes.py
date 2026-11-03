@@ -10,7 +10,7 @@ $ python compte_lignes.py animaux3.txt
 ERREUR : animaux3.txt n'existe pas."""
 import sys
 from pathlib import Path
-if sys.argv[1]:
+if len(sys.argv) == 2:
     if Path(sys.argv[1]).exists():
         with open(sys.argv[1], "r") as file:
             print(f"Le fichier {sys.argv[1]} contient {len(file.readlines())} lignes!")
