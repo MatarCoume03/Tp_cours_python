@@ -17,4 +17,4 @@ if len(sys.argv) == 2:
     else:
         sys.exit(f"ERREUR: {sys.argv[1]} n'existe pas.")
 else:
-    sys.exit("Erreur : Vous n'avez fourni qu'un seul argument.")
+    sys.exit("Erreur : Vous devez fournir exactement 2 arguments!")
