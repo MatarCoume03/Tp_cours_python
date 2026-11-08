@@ -16,3 +16,5 @@ while i <= n_iter:
 rapport = n / n_iter
 pi = 4 * rapport
 print(f"Pour N = 100 la valeur estimee de π est de: {pi}")
+print(f"La valeur de pi dans le module math est de: {math.pi}")
+print(f"La valeur du nombre pi donnee par la méthode Monte Carlo ( si elle n'est pas nulle ) reste superieure a pi du module math")
