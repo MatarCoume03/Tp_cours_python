@@ -3,7 +3,7 @@ import math
 xa = random.uniform(-1, 1)
 ya = random.uniform(-1, 1)
 n = 0 # Cette variable represente le nombre de points dans le cercle
-n_iter = 1000 # Cette variable represente le nombre d'iteration
+n_iter = 10000 # Cette variable represente le nombre d'iteration
 i = 0 # Ceci est notre compteur
 while i <= n_iter:
     # on rappelle que le centre du cercle est le point o de coordonees (xo = 0, yo = 0)
