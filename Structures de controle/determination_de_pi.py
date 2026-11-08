@@ -14,4 +14,5 @@ while i <= n_iter:
         n += 0
     i += 1
 rapport = n / n_iter
-print(int(rapport))
+pi = 4 * rapport
+print(f"Pour N = 100 la valeur estimee de π est de: {pi}")
