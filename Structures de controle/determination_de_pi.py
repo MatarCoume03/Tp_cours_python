@@ -14,4 +14,4 @@ while i <= n_iter:
         n += 0
     i += 1
 rapport = n / n_iter
-print(rapport)
+print(int(rapport))
