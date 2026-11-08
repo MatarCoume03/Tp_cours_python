@@ -1,7 +1,5 @@
-import random
-import math
-xa = random.uniform(-1, 1)
-ya = random.uniform(-1, 1)
+import random, math
+xa, ya = random.uniform(-1, 1), random.uniform(-1, 1)
 n = 0 # Cette variable represente le nombre de points dans le cercle
 n_iter = 10000 # Cette variable represente le nombre d'iteration
 i = 0 # Ceci est notre compteur
